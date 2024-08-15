@@ -6,16 +6,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  server: {
-    cors: false,
-    proxy: {
-      '/list': {
-        target: 'https://api.test-webest.ru/list',
-        changeOrigin: true,
-        secure: false,
-      }
-    },
-  },
+  base: '/webest/',
   module: {
     rules: [
       {

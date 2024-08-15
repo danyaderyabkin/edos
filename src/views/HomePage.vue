@@ -4,10 +4,10 @@ import TenderList from "@/components/TenderList.vue";
 </script>
 
 <template>
-  <TheHeader/>
   <main>
     <div class="container">
-      <TenderList/>
+      <h1 class="heading">Домашняя страница задания</h1>
+      <p class="text">Перейти на <router-link to="/tenders">Tenders Page</router-link></p>
     </div>
   </main>
 </template>

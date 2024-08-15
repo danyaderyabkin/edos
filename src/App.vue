@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import {RouterView} from 'vue-router'
+import TheHeader from "@/components/TheHeader.vue";
 </script>
 
 <template>
-  <RouterView />
+  <TheHeader/>
+  <transition name="fade">
+    <RouterView/>
+  </transition>
 </template>
 
